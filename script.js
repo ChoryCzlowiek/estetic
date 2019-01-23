@@ -10,21 +10,3 @@ function toogleMenu() {
 }
 
 menuOpen.addEventListener('click', toogleMenu);
-
-// Slider
-
-// const sliders = ['images/slider1.png', 'images/slider2.png', 'images/slider3.png'];
-// const image = document.querySelector('.slider__image');
-// let activeSlider = 0;
-
-// const changeSlider = () => {
-//     image.src = sliders[activeSlider];
-//     activeSlider++;
-//     if (activeSlider > 2) {
-//         activeSlider = 0;
-//     }
-
-//     setTimeout(changeSlider, 5000)
-// }
-
-// changeSlider();
