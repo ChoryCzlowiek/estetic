@@ -1,6 +1,80 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+// About
+
+.about {
+    position: relative;
+    height: 130vh;
+    overflow: hidden;
+    background-color: rgb(231, 219, 221);
+
+    &__text {
+        position: absolute;
+        top: 65%;
+        left: 20%;
+        right: 25%;
+        padding: 10px;
+        font-size: 1.2rem;
+        font-family: 'Staatliches', cursive;
+        color: rgb(255, 255, 255);
+        letter-spacing: 1px;
+        box-shadow: -3px 3px 15px 0 white;
+    }
+}
+
+// Images
+
+.main-container {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: 60vh;
+
+    &__image {
+        box-shadow: 0 0 15px 5px rgb(255, 218, 218);
+
+        &--big {
+            position: absolute;
+            top: 0;
+            left: 20%;
+            height: 90%;
+            width: 80%;
+            background-image: url('../images/about1.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+
+        &--small {
+            position: absolute;
+            top: 60%;
+            left: 0%;
+            height: 40%;
+            width: 50%;
+            background-image: url('../images/about2.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    &__title {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        font-size: 3.5rem;
+        font-family: 'Tangerine', cursive;
+        color: rgba(255, 0, 0, 0.5);
+        letter-spacing: 2px;
+        transform: rotate(-30deg);
+    }
+
+    &__heading {
+        position: absolute;
+        top: 75%;
+        left: 40%;
+        font-size: 2rem;
+        color: rgb(255, 238, 238);
+
+        &--under {
+            top: 85%;
+        }
+    }
 }

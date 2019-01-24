@@ -3,13 +3,13 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow: hidden;
   font-family: 'Roboto', sans-serif;
 }
 
 .header {
   position: relative;
   height: 100vh;
+  overflow: hidden;
 }
 
 .header__slider {
@@ -337,11 +337,83 @@
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+.about {
+  position: relative;
+  height: 130vh;
+  overflow: hidden;
+  background-color: #e7dbdd;
+}
+
+.about__text {
+  position: absolute;
+  top: 65%;
+  left: 20%;
+  right: 25%;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-family: 'Staatliches', cursive;
+  color: white;
+  letter-spacing: 1px;
+  -webkit-box-shadow: -3px 3px 15px 0 white;
+          box-shadow: -3px 3px 15px 0 white;
+}
+
+.main-container {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 90%;
+  height: 60vh;
+}
+
+.main-container__image {
+  -webkit-box-shadow: 0 0 15px 5px #ffdada;
+          box-shadow: 0 0 15px 5px #ffdada;
+}
+
+.main-container__image--big {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  height: 90%;
+  width: 80%;
+  background-image: url("../images/about1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.main-container__image--small {
+  position: absolute;
+  top: 60%;
+  left: 0%;
+  height: 40%;
+  width: 50%;
+  background-image: url("../images/about2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.main-container__title {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-size: 3.5rem;
+  font-family: 'Tangerine', cursive;
+  color: rgba(255, 0, 0, 0.5);
+  letter-spacing: 2px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.main-container__heading {
+  position: absolute;
+  top: 75%;
+  left: 40%;
+  font-size: 2rem;
+  color: #ffeeee;
+}
+
+.main-container__heading--under {
+  top: 85%;
 }
 /*# sourceMappingURL=main.css.map */

@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -11,6 +10,7 @@
 .header {
     position: relative;
     height: 100vh;
+    overflow: hidden;
 
     &__slider {
         position: absolute;
