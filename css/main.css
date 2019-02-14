@@ -180,6 +180,7 @@
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding: 5px;
+  list-style: none;
 }
 
 .menu__item:nth-child(1), .menu__item:nth-child(2), .menu__item:nth-child(3), .menu__item:nth-child(5) {
@@ -338,82 +339,34 @@
 }
 
 .about {
-  position: relative;
-  height: 130vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   overflow: hidden;
-  background-color: #e7dbdd;
+}
+
+.about__image {
+  width: 110%;
 }
 
 .about__text {
-  position: absolute;
-  top: 65%;
-  left: 20%;
-  right: 25%;
-  padding: 10px;
-  font-size: 1.2rem;
-  font-family: 'Staatliches', cursive;
-  color: white;
-  letter-spacing: 1px;
-  -webkit-box-shadow: -3px 3px 15px 0 white;
-          box-shadow: -3px 3px 15px 0 white;
+  padding: 7vh 10%;
+  color: #2c2c2c;
 }
 
-.main-container {
-  position: absolute;
-  top: 10%;
-  left: 5%;
-  width: 90%;
-  height: 60vh;
+.about__text .text__title {
+  padding-bottom: 2vh;
+  font-size: 3rem;
+  font-family: 'Tangerine';
+  text-shadow: -2px 2px 5px #2c2c2c;
 }
 
-.main-container__image {
-  -webkit-box-shadow: 0 0 15px 5px #ffdada;
-          box-shadow: 0 0 15px 5px #ffdada;
-}
-
-.main-container__image--big {
-  position: absolute;
-  top: 0;
-  left: 20%;
-  height: 90%;
-  width: 80%;
-  background-image: url("../images/about1.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.main-container__image--small {
-  position: absolute;
-  top: 60%;
-  left: 0%;
-  height: 40%;
-  width: 50%;
-  background-image: url("../images/about2.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.main-container__title {
-  position: absolute;
-  top: 10%;
-  left: 5%;
-  font-size: 3.5rem;
-  font-family: 'Tangerine', cursive;
-  color: rgba(255, 0, 0, 0.5);
-  letter-spacing: 2px;
-  -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
-}
-
-.main-container__heading {
-  position: absolute;
-  top: 75%;
-  left: 40%;
-  font-size: 2rem;
-  color: #ffeeee;
-}
-
-.main-container__heading--under {
-  top: 85%;
+.about__text .text__description {
+  font-size: .8em;
+  opacity: .8;
 }
 /*# sourceMappingURL=main.css.map */
