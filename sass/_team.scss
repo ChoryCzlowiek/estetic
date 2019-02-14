@@ -1,0 +1,20 @@
+// Team
+
+.team {
+
+    &__images-container {
+        margin: 0 20% 0;
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .images-container__box {
+            flex-basis: 30%;
+
+            .images-container__image {
+                width: 100%;
+            }
+        }
+    }
+}
