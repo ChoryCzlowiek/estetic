@@ -1,6 +1,7 @@
 // Projects Heading
 
 .projects {
+    background-color: rgb(207, 207, 207);
 
     .projects__heading {
         position: relative;
@@ -42,12 +43,11 @@
 .projects {
 
     &__rooms {
-        margin: 5vh 15%;
+        margin: 5vh 15% 0;
+        padding-bottom: 5vh;
         width: 70%;
         display: flex;
         flex-direction: column;
-
-
     }
 }
 
@@ -68,13 +68,14 @@
         left: 3%;
         width: 94%;
         height: 90%;
-        border: 1px solid rgb(44, 44, 44);
+        border: 1px solid rgb(255, 255, 255);
     }
 
     &__image {
         flex-basis: 50%;
         background-position: center;
         background-size: cover;
+        filter: grayscale(50%);
 
         &--bedroom {
             background-image: url('../images/bedroom.jpg');
@@ -119,7 +120,7 @@
             left: 30%;
             width: 40%;
             border: none;
-            border-top: 1px solid rgb(44, 44, 44);
+            border-top: 1px solid rgb(126, 126, 126);
         }
     }
 }

@@ -547,6 +547,10 @@
   }
 }
 
+.projects {
+  background-color: #cfcfcf;
+}
+
 .projects .projects__heading {
   position: relative;
   height: 20vh;
@@ -583,7 +587,8 @@
 }
 
 .projects__rooms {
-  margin: 5vh 15%;
+  margin: 5vh 15% 0;
+  padding-bottom: 5vh;
   width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -616,7 +621,7 @@
   left: 3%;
   width: 94%;
   height: 90%;
-  border: 1px solid #2c2c2c;
+  border: 1px solid white;
 }
 
 .item__image {
@@ -624,6 +629,8 @@
       flex-basis: 50%;
   background-position: center;
   background-size: cover;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
 }
 
 .item__image--bedroom {
@@ -670,6 +677,6 @@
   left: 30%;
   width: 40%;
   border: none;
-  border-top: 1px solid #2c2c2c;
+  border-top: 1px solid #7e7e7e;
 }
 /*# sourceMappingURL=main.css.map */
