@@ -546,4 +546,130 @@
     font-size: 1rem;
   }
 }
+
+.projects .projects__heading {
+  position: relative;
+  height: 20vh;
+  width: 100%;
+  background-image: url("../images/projects.jpg");
+  background-position: center;
+  background-size: cover;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+  text-align: center;
+}
+
+.projects .projects__heading .heading__border {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  height: 90%;
+  width: 90%;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.projects .projects__heading .heading__text {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 100%;
+  font-size: .7rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.projects .projects__heading .heading__text--title {
+  top: 45%;
+  font-size: 1.6rem;
+}
+
+.projects__rooms {
+  margin: 5vh 15%;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.item {
+  position: relative;
+  -ms-flex-preferred-size: 15vh;
+      flex-basis: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item--reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.item__border {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  width: 94%;
+  height: 90%;
+  border: 1px solid #2c2c2c;
+}
+
+.item__image {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.item__image--bedroom {
+  background-image: url("../images/bedroom.jpg");
+}
+
+.item__image--kitchen {
+  background-image: url("../images/kitchen.jpg");
+}
+
+.item__image--living {
+  background-image: url("../images/living-room.jpg");
+}
+
+.item__image--bathroom {
+  background-image: url("../images/bathroom.jpg");
+}
+
+.item__text-container {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  position: relative;
+  text-align: center;
+}
+
+.item__text-container .item__text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 80%;
+  font-size: .4rem;
+  color: #2c2c2c;
+}
+
+.item__text-container .item__text--title {
+  top: 15%;
+  font-family: tangerine;
+  font-size: 1.3rem;
+}
+
+.item__text-container .item__line {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  width: 40%;
+  border: none;
+  border-top: 1px solid #2c2c2c;
+}
 /*# sourceMappingURL=main.css.map */
