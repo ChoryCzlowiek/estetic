@@ -547,10 +547,6 @@
   }
 }
 
-.projects {
-  background-color: #cfcfcf;
-}
-
 .projects .projects__heading {
   position: relative;
   height: 20vh;
@@ -621,7 +617,8 @@
   left: 3%;
   width: 94%;
   height: 90%;
-  border: 1px solid white;
+  border: 1px solid rgba(44, 44, 44, 0.7);
+  z-index: 1;
 }
 
 .item__image {
@@ -669,6 +666,7 @@
   top: 15%;
   font-family: tangerine;
   font-size: 1.3rem;
+  color: rgba(44, 44, 44, 0.9);
 }
 
 .item__text-container .item__line {

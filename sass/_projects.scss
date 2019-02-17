@@ -1,7 +1,6 @@
 // Projects Heading
 
 .projects {
-    background-color: rgb(207, 207, 207);
 
     .projects__heading {
         position: relative;
@@ -68,7 +67,8 @@
         left: 3%;
         width: 94%;
         height: 90%;
-        border: 1px solid rgb(255, 255, 255);
+        border: 1px solid rgba(44, 44, 44, .7);
+        z-index: 1;
     }
 
     &__image {
@@ -111,6 +111,7 @@
                 top: 15%;
                 font-family: tangerine;
                 font-size: 1.3rem;
+                color: rgba(44, 44, 44, .9);
             }
         }
 
