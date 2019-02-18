@@ -1,0 +1,131 @@
+// Contact
+
+.contact {
+    position: relative;
+    margin: 10vh 0;
+    height: 15vh;
+    background-color: beige;
+
+    &__container {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        width: 90%;
+        height: 80%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+// Item
+
+.info {
+    flex-basis: 50%;
+    display: flex;
+    position: relative;
+
+    &__icon-container {
+        flex-basis: 25%;
+        text-align: center;
+
+
+        .info__icon {
+            line-height: 6vh;
+            font-size: 1.3rem;
+        }
+    }
+
+    &__text-container {
+        flex-basis: 75%;
+        padding: 5px 0;
+
+        .info__text {
+            padding: 2px 0;
+            font-size: .5rem;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    // Info
+
+    .info {
+
+        &__icon-container {
+
+            .info__icon {
+                font-size: 2.3rem;
+            }
+        }
+
+        &__text-container {
+            padding: 5px 0;
+
+            .info__text {
+                font-size: 1rem;
+                padding: 2px 0;
+            }
+        }
+    }
+}
+
+@media (orientation: landscape) and (min-height: 350px) {
+    // Contact
+
+    .contact {
+        height: 20vh;
+
+        &__container {
+            flex-wrap: nowrap;
+        }
+    }
+
+    // Item
+
+    .info {
+        flex-basis: 25%;
+
+        &__icon-container {
+
+            .info__icon {
+                line-height: 16vh;
+            }
+        }
+
+        &__text-container {
+            flex-basis: 75%;
+            padding: 15px 0;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    // Contact
+
+    .contact {
+        height: 15vh;
+    }
+
+    // Item
+
+    .info {
+        flex-basis: 25%;
+
+        &__icon-container {
+
+            .info__icon {
+                line-height: 12vh;
+                font-size: 2.5rem;
+            }
+        }
+
+        &__text-container {
+            flex-basis: 75%;
+            padding: 25px 0;
+
+            .info__text {
+                font-size: 1rem;
+            }
+        }
+    }
+}
