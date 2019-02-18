@@ -1,0 +1,84 @@
+// Opinions
+
+.opinions {
+
+    &__container {
+        position: relative;
+        margin: 10vh auto;
+        width: 80%;
+        height: 40vh;
+        border: 3px solid rgba(44, 44, 44, 0.6);
+
+        .opinions__title {
+            position: absolute;
+            top: 8%;
+            left: 35%;
+            width: 60%;
+            text-align: center;
+            font-size: 1.7rem;
+            font-family: tangerine;
+            color: rgba(44, 44, 44, .9);
+        }
+
+        .opinions__line {
+            position: absolute;
+            top: 35%;
+            left: 45%;
+            width: 40%;
+            border: none;
+            border-top: 2px solid rgba(44, 44, 44, 0.6);
+        }
+
+        .opinions__image {
+            position: absolute;
+            top: 15%;
+            left: 10%;
+            width: 70px;
+            height: 70px;
+            background-image: url('../images/opinions1.jpg');
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+            filter: grayscale(50%);
+        }
+
+        .opinions__text {
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            width: 65%;
+            text-align: center;
+            font-size: .8rem;
+        }
+
+        .opinions__name {
+            position: absolute;
+            top: 85%;
+            left: 60%;
+            font-size: 1.6rem;
+            font-family: tangerine;
+        }
+
+        .opinions__circles-container {
+            position: absolute;
+            top: 75%;
+            left: 5%;
+            width: 60px;
+            height: 15px;
+            transform: rotate(45deg);
+            display: flex;
+            justify-content: space-between;
+
+            .opinions__circle {
+                flex-basis: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: rgb(185, 185, 136);
+
+                &--active {
+                    background-color: rgb(110, 110, 85);
+                }
+            }
+        }
+    }
+}
