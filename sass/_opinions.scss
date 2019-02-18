@@ -82,3 +82,99 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+    // Opinions
+
+    .opinions {
+
+        &__container {
+            border: 4px solid rgba(44, 44, 44, 0.6);
+
+            .opinions__title {
+                font-size: 3.5rem;
+            }
+
+            .opinions__line {
+                top: 40%;
+                border-top: 3px solid rgba(44, 44, 44, 0.6);
+            }
+
+            .opinions__image {
+                width: 120px;
+                height: 120px;
+            }
+
+            .opinions__text {
+                font-size: 1.5rem;
+            }
+
+            .opinions__name {
+                font-size: 3rem;
+            }
+
+            .opinions__circles-container {
+                width: 100px;
+                height: 25px;
+
+                .opinions__circle {
+                    flex-basis: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (orientation: landscape) and (min-height: 350px) {
+    // Opinions
+
+    .opinions {
+
+        &__container {
+            height: 50vh;
+            border: 2px solid rgba(44, 44, 44, 0.6);
+
+            .opinions__line {
+                top: 30%;
+            }
+
+            .opinions__text {
+                top: 45%;
+            }
+
+            .opinions__name {
+                top: 80%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    // Opinions
+
+    .opinions {
+
+        &__container {
+            border: 5px solid rgba(44, 44, 44, 0.6);
+
+            .opinions__title {
+                font-size: 4rem;
+            }
+
+            .opinions__line {
+                border-top: 4px solid rgba(44, 44, 44, 0.6);
+            }
+
+            .opinions__text {
+                left: 25%;
+                font-size: 1.6rem;
+            }
+
+            .opinions__name {
+                font-size: 4rem;
+                font-family: tangerine;
+            }
+        }
+    }
+}
