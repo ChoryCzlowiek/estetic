@@ -919,6 +919,7 @@
   left: 60%;
   font-size: 1.6rem;
   font-family: tangerine;
+  color: rgba(44, 44, 44, 0.9);
 }
 
 .opinions__container .opinions__circles-container {
@@ -999,21 +1000,31 @@
 
 @media (min-width: 1024px) {
   .opinions__container {
+    width: 60%;
     border: 5px solid rgba(44, 44, 44, 0.6);
   }
   .opinions__container .opinions__title {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .opinions__container .opinions__line {
+    top: 35%;
     border-top: 4px solid rgba(44, 44, 44, 0.6);
   }
   .opinions__container .opinions__text {
     left: 25%;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .opinions__container .opinions__name {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .opinions__container .opinions__title {
     font-size: 4rem;
-    font-family: tangerine;
+  }
+  .opinions__container .opinions__name {
+    font-size: 3.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
