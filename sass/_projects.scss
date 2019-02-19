@@ -104,13 +104,12 @@
             left: 10%;
             width: 80%;
             font-size: .4rem;
-            color: rgb(44, 44, 44);
 
             &--title {
                 top: 15%;
-                font-family: tangerine;
+                font-family: var(--tangerine);
                 font-size: 1.3rem;
-                color: rgba(44, 44, 44, .9);
+                color: rgba(44, 44, 44, .7);
             }
         }
 

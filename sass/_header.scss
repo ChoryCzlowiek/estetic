@@ -47,9 +47,9 @@
         width: 100%;
         text-align: center;
         font-size: 3.8rem;
-        font-family: 'Tangerine', cursive;
+        font-family: var(--tangerine);
         font-weight: 500;
-        color: rgb(44, 44, 44);
+        color: rgba(44, 44, 44, .7);
         z-index: 4;
     }
 
@@ -119,7 +119,7 @@
             &--text {
                 font-size: 3rem;
                 font-weight: 500;
-                font-family: 'Tangerine', cursive;
+                font-family: var(--tangerine);
             }
 
             &--triangle {

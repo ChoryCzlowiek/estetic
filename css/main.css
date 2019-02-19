@@ -52,9 +52,9 @@
   width: 100%;
   text-align: center;
   font-size: 3.8rem;
-  font-family: 'Tangerine', cursive;
+  font-family: var(--tangerine);
   font-weight: 500;
-  color: #2c2c2c;
+  color: rgba(44, 44, 44, 0.7);
   z-index: 4;
 }
 
@@ -141,7 +141,7 @@
 .navigation__opener .navigation__icon--text {
   font-size: 3rem;
   font-weight: 500;
-  font-family: 'Tangerine', cursive;
+  font-family: var(--tangerine);
 }
 
 .navigation__opener .navigation__icon--triangle {
@@ -358,10 +358,17 @@
 }
 
 .about__text-container .about__title {
-  margin: 25% 0 20%;
-  font-family: tangerine;
+  margin: 25% 0 3%;
+  font-family: var(--tangerine);
   font-size: 3rem;
-  color: #2c2c2c;
+  color: rgba(44, 44, 44, 0.7);
+}
+
+.about__text-container .about__line {
+  margin: 0 auto 15%;
+  width: 50%;
+  border: none;
+  border-top: 2px solid rgba(44, 44, 44, 0.7);
 }
 
 .about__text-container .about__text {
@@ -375,15 +382,63 @@
   background-image: url("../images/about.jpg");
   background-position: center;
   background-size: cover;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
   -webkit-clip-path: polygon(38% 0, 100% 0, 100% 100%, 0% 100%);
           clip-path: polygon(38% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+@media (min-width: 768px) {
+  .about__text-container .about__title {
+    font-size: 5rem;
+  }
+  .about__text-container .about__line {
+    border-top: 4px solid rgba(44, 44, 44, 0.7);
+  }
+  .about__text-container .about__text {
+    font-size: 1.4rem;
+  }
+  .about__image {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    background-image: url("../images/about.jpg");
+    background-position: center;
+    background-size: cover;
+    -webkit-filter: grayscale(50%);
+            filter: grayscale(50%);
+    -webkit-clip-path: polygon(38% 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(38% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+@media (orientation: landscape) and (min-height: 350px) {
+  .about {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about {
+    height: 80vh;
+  }
+  .about__text-container .about__title {
+    font-size: 5rem;
+  }
+  .about__text-container .about__line {
+    border-top: 4px solid rgba(44, 44, 44, 0.7);
+  }
+  .about__text-container .about__text {
+    font-size: 1.5rem;
+  }
 }
 
 .team__subtitle {
   margin: 5vh 10%;
   text-align: center;
   font-size: 2.5rem;
-  font-family: tangerine;
+  font-family: var(--tangerine);
+  font-weight: bold;
+  color: rgba(44, 44, 44, 0.7);
 }
 
 .images-container {
@@ -441,8 +496,8 @@
   width: 100%;
   -webkit-filter: grayscale(50%);
           filter: grayscale(50%);
-  -webkit-box-shadow: 0 0 10px 2px black;
-          box-shadow: 0 0 10px 2px black;
+  -webkit-box-shadow: 0 0 10px 2px #615f5f;
+          box-shadow: 0 0 10px 2px #615f5f;
 }
 
 .images-container .images-container__box .box__text {
@@ -663,14 +718,13 @@
   left: 10%;
   width: 80%;
   font-size: .4rem;
-  color: #2c2c2c;
 }
 
 .item__text-container .item__text--title {
   top: 15%;
-  font-family: tangerine;
+  font-family: var(--tangerine);
   font-size: 1.3rem;
-  color: rgba(44, 44, 44, 0.9);
+  color: rgba(44, 44, 44, 0.7);
 }
 
 .item__text-container .item__line {
@@ -882,8 +936,8 @@
   width: 60%;
   text-align: center;
   font-size: 1.7rem;
-  font-family: tangerine;
-  color: rgba(44, 44, 44, 0.9);
+  font-family: var(--tangerine);
+  color: rgba(44, 44, 44, 0.7);
 }
 
 .opinions__container .opinions__line {
@@ -892,7 +946,7 @@
   left: 45%;
   width: 40%;
   border: none;
-  border-top: 2px solid rgba(44, 44, 44, 0.6);
+  border-top: 2px solid rgba(44, 44, 44, 0.7);
 }
 
 .opinions__container .opinions__image {
@@ -923,8 +977,8 @@
   top: 85%;
   left: 60%;
   font-size: 1.6rem;
-  font-family: tangerine;
-  color: rgba(44, 44, 44, 0.9);
+  font-family: var(--tangerine);
+  color: rgba(44, 44, 44, 0.7);
 }
 
 .opinions__container .opinions__circles-container {
@@ -1057,7 +1111,7 @@
 .message__container .message__title {
   padding-bottom: 3%;
   text-align: center;
-  font-family: tangerine;
+  font-family: var(--tangerine);
   font-size: 3rem;
   color: rgba(44, 44, 44, 0.7);
 }
@@ -1066,7 +1120,7 @@
   margin: 0 0 8% 20%;
   width: 60%;
   border: none;
-  border-top: 2px solid rgba(255, 0, 0, 0.7);
+  border-top: 2px solid rgba(44, 44, 44, 0.7);
 }
 
 .box-message {
@@ -1108,7 +1162,7 @@
   width: 40%;
   height: 5vh;
   line-height: 5vh;
-  font-family: tangerine;
+  font-family: var(--tangerine);
   font-size: 1.3rem;
   font-weight: bold;
   color: rgba(44, 44, 44, 0.8);

@@ -6,7 +6,9 @@
         margin: 5vh 10%;
         text-align: center;
         font-size: 2.5rem;
-        font-family: tangerine;
+        font-family: var(--tangerine);
+        font-weight: bold;
+        color: rgba(44, 44, 44, .7);
     }
 }
 
@@ -55,7 +57,7 @@
         .box__image {
             width: 100%;
             filter: grayscale(50%);
-            box-shadow: 0 0 10px 2px rgb(0, 0, 0);
+            box-shadow: 0 0 10px 2px rgb(97, 95, 95);
         }
 
         .box__text {

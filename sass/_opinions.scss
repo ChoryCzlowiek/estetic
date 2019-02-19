@@ -16,8 +16,8 @@
             width: 60%;
             text-align: center;
             font-size: 1.7rem;
-            font-family: tangerine;
-            color: rgba(44, 44, 44, .9);
+            font-family: var(--tangerine);
+            color: rgba(44, 44, 44, .7);
         }
 
         .opinions__line {
@@ -26,7 +26,7 @@
             left: 45%;
             width: 40%;
             border: none;
-            border-top: 2px solid rgba(44, 44, 44, 0.6);
+            border-top: 2px solid rgba(44, 44, 44, .7);
         }
 
         .opinions__image {
@@ -56,8 +56,8 @@
             top: 85%;
             left: 60%;
             font-size: 1.6rem;
-            font-family: tangerine;
-            color: rgba(44, 44, 44, .9);
+            font-family: var(--tangerine);
+            color: rgba(44, 44, 44, .7);
         }
 
         .opinions__circles-container {
