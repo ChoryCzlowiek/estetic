@@ -6,6 +6,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+:root {
+  --tangerine: 'Tangerine';
+}
+
 .header {
   position: relative;
   height: 100vh;
@@ -338,40 +342,41 @@
   }
 }
 
-:root {
-  --tangerine: 'Tangerine';
-}
-
 .about {
+  margin: 0 0 10vh;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow: hidden;
+  background-color: beige;
 }
 
-.about__image {
-  width: 110%;
+.about__text-container {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: center;
 }
 
-.about__text {
-  padding: 7vh 10%;
+.about__text-container .about__title {
+  margin: 25% 0 20%;
+  font-family: tangerine;
+  font-size: 3rem;
   color: #2c2c2c;
 }
 
-.about__text .text__title {
-  padding-bottom: 2vh;
-  font-size: 3rem;
-  font-family: 'Tangerine';
-  text-shadow: -2px 2px 5px #2c2c2c;
+.about__text-container .about__text {
+  margin: 0 5%;
+  font-size: .8rem;
 }
 
-.about__text .text__description {
-  font-size: .8em;
-  opacity: .8;
+.about__image {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background-image: url("../images/about.jpg");
+  background-position: center;
+  background-size: cover;
+  -webkit-clip-path: polygon(38% 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(38% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .team__subtitle {
@@ -1026,5 +1031,88 @@
   .opinions__container .opinions__name {
     font-size: 3.5rem;
   }
+}
+
+.message {
+  position: relative;
+  margin: 10vh 0 0;
+  height: 80vh;
+  background-image: url("../images/message.png");
+  background-position: center;
+  background-size: cover;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+
+.message__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 70%;
+  height: 65vh;
+}
+
+.message__container .message__title {
+  padding-bottom: 3%;
+  text-align: center;
+  font-family: tangerine;
+  font-size: 3rem;
+  color: rgba(44, 44, 44, 0.7);
+}
+
+.message__container .message__line {
+  margin: 0 0 8% 20%;
+  width: 60%;
+  border: none;
+  border-top: 2px solid rgba(255, 0, 0, 0.7);
+}
+
+.box-message {
+  margin-left: 10%;
+  width: 80%;
+}
+
+.box-message__input {
+  width: 100%;
+  margin: 3% 0;
+  padding: 3% 2%;
+  border: 1px solid #2c2c2c;
+  opacity: .7;
+}
+
+.box-message__input::-webkit-input-placeholder {
+  font-size: .7rem;
+}
+
+.box-message__input:-ms-input-placeholder {
+  font-size: .7rem;
+}
+
+.box-message__input::-ms-input-placeholder {
+  font-size: .7rem;
+}
+
+.box-message__input::placeholder {
+  font-size: .7rem;
+}
+
+.box-message__input:focus {
+  border: 2px solid #2c2c2c;
+}
+
+.box-message__button {
+  position: relative;
+  margin: 8% 0 0 50%;
+  width: 40%;
+  height: 5vh;
+  line-height: 5vh;
+  font-family: tangerine;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgba(44, 44, 44, 0.8);
+  background-color: #eeee87;
+  border: 1px solid rgba(44, 44, 44, 0.6);
 }
 /*# sourceMappingURL=main.css.map */

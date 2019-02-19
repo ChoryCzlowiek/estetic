@@ -1,0 +1,72 @@
+// Message
+
+.message {
+    position: relative;
+    margin: 10vh 0 0;
+    height: 80vh;
+    background-image: url('../images/message.png');
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(50%);
+
+    &__container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 65vh;
+
+        .message__title {
+            padding-bottom: 3%;
+            text-align: center;
+            font-family: tangerine;
+            font-size: 3rem;
+            color: rgba(44, 44, 44, .7);
+        }
+
+        .message__line {
+            margin: 0 0 8% 20%;
+            width: 60%;
+            border: none;
+            border-top: 2px solid rgba(255, 0, 0, 0.7);
+        }
+    }
+}
+
+// Box Message
+
+.box-message {
+    margin-left: 10%;
+    width: 80%;
+
+    &__input {
+        width: 100%;
+        margin: 3% 0;
+        padding: 3% 2%;
+        border: 1px solid rgb(44, 44, 44);
+        opacity: .7;
+
+        &::placeholder {
+            font-size: .7rem;
+        }
+
+        &:focus {
+            border: 2px solid rgb(44, 44, 44);
+        }
+    }
+
+    &__button {
+        position: relative;
+        margin: 8% 0 0 50%;
+        width: 40%;
+        height: 5vh;
+        line-height: 5vh;
+        font-family: tangerine;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: rgba(44, 44, 44, .8);
+        background-color: rgb(238, 238, 135);
+        border: 1px solid rgba(44, 44, 44, 0.6);
+    }
+}

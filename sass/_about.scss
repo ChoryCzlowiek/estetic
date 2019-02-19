@@ -1,32 +1,33 @@
 // About
-:root {
-    --tangerine: 'Tangerine';
-}
 
 .about {
+    margin: 0 0 10vh;
+    height: 60vh;
     display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    background-color: beige;
 
-    &__image {
-        width: 110%;
+    &__text-container {
+        flex-basis: 50%;
+        text-align: center;
+
+        .about__title {
+            margin: 25% 0 20%;
+            font-family: tangerine;
+            font-size: 3rem;
+            color: rgb(44, 44, 44);
+        }
+
+        .about__text {
+            margin: 0 5%;
+            font-size: .8rem;
+        }
     }
 
-    &__text {
-        padding: 7vh 10%;
-        color: rgb(44, 44, 44);
-
-
-        .text__title {
-            padding-bottom: 2vh;
-            font-size: 3rem;
-            font-family: 'Tangerine';
-            text-shadow: -2px 2px 5px rgb(44, 44, 44);
-        }
-
-        .text__description {
-            font-size: .8em;
-            opacity: .8;
-        }
+    &__image {
+        flex-basis: 50%;
+        background-image: url('../images/about.jpg');
+        background-position: center;
+        background-size: cover;
+        clip-path: polygon(38% 0, 100% 0, 100% 100%, 0% 100%);
     }
 }
