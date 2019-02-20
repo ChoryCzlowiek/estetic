@@ -31,7 +31,8 @@
 
             &--title {
                 top: 45%;
-                font-size: 1.6rem;
+                font-size: 3rem;
+                font-family: var(--tangerine);
             }
         }
     }
@@ -100,7 +101,7 @@
 
         .item__text {
             position: absolute;
-            top: 50%;
+            top: 55%;
             left: 10%;
             width: 80%;
             font-size: .4rem;
@@ -115,7 +116,7 @@
 
         .item__line {
             position: absolute;
-            top: 40%;
+            top: 50%;
             left: 30%;
             width: 40%;
             border: none;
@@ -142,7 +143,7 @@
 
                 &--title {
                     top: 45%;
-                    font-size: 2.3rem;
+                    font-size: 4.5rem;
                 }
             }
         }
@@ -171,7 +172,7 @@
                 font-size: .8rem;
 
                 &--title {
-                    font-size: 2rem;
+                    font-size: 2.5rem;
                 }
             }
         }
@@ -234,7 +235,7 @@
                 font-size: 1.3rem;
 
                 &--title {
-                    font-size: 3rem;
+                    font-size: 5rem;
                 }
             }
         }

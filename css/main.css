@@ -230,7 +230,7 @@ html {
     border-bottom: 2px solid #585858;
   }
   .menu__item .menu__link {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -345,8 +345,14 @@ html {
   .menu__item .menu__link--size {
     line-height: 8vh;
     font-weight: bold;
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-family: 'Tangerine', cursive;
+  }
+}
+
+@media (min-width: 1440px) {
+  .menu__item .menu__link--size {
+    font-size: 5rem;
   }
 }
 
@@ -366,7 +372,7 @@ html {
 }
 
 .about__text-container .about__title {
-  margin: 25% 0 3%;
+  margin: 15% 0 3%;
   font-family: var(--tangerine);
   font-size: 3rem;
   color: rgba(44, 44, 44, 0.7);
@@ -565,10 +571,10 @@ html {
             box-shadow: 0 0 15px 4px black;
   }
   .images-container .images-container__box .box__workers-info {
-    font-size: 1.3rem;
+    font-size: .9rem;
   }
   .images-container .images-container__box .box__workers-info--job {
-    font-size: .8rem;
+    font-size: .7rem;
   }
 }
 
@@ -613,7 +619,8 @@ html {
 
 .projects .projects__heading .heading__text--title {
   top: 45%;
-  font-size: 1.6rem;
+  font-size: 3rem;
+  font-family: var(--tangerine);
 }
 
 .projects__rooms {
@@ -688,7 +695,7 @@ html {
 
 .item__text-container .item__text {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 10%;
   width: 80%;
   font-size: .4rem;
@@ -703,7 +710,7 @@ html {
 
 .item__text-container .item__line {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 30%;
   width: 40%;
   border: none;
@@ -723,7 +730,7 @@ html {
   }
   .projects .projects__heading .heading__text--title {
     top: 45%;
-    font-size: 2.3rem;
+    font-size: 4.5rem;
   }
   .projects__rooms {
     margin: 5vh 10%;
@@ -736,7 +743,7 @@ html {
     font-size: .8rem;
   }
   .item__text-container .item__text--title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -771,7 +778,7 @@ html {
     font-size: 1.3rem;
   }
   .projects .projects__heading .heading__text--title {
-    font-size: 3rem;
+    font-size: 5rem;
   }
   .item {
     -ms-flex-preferred-size: 20vh;
@@ -925,8 +932,8 @@ html {
 
 .opinions__container .opinions__image {
   position: absolute;
-  top: 15%;
-  left: 10%;
+  top: 10%;
+  left: 5%;
   width: 70px;
   height: 70px;
   background-image: url("../images/opinions1.jpg");

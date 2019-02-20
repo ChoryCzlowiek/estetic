@@ -238,7 +238,7 @@ html {
             }
 
             .menu__link {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
         }
     }
@@ -381,8 +381,25 @@ html {
                 &--size {
                     line-height: 8vh;
                     font-weight: bold;
-                    font-size: 4.5rem;
+                    font-size: 4rem;
                     font-family: 'Tangerine', cursive;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    // Menu
+
+    .menu {
+
+        &__item {
+
+            .menu__link {
+
+                &--size {
+                    font-size: 5rem;
                 }
             }
         }
