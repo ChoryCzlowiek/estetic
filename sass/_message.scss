@@ -24,69 +24,72 @@
         border-top: 2px solid rgba(44, 44, 44, .7);
     }
 
-    &__input {
-        width: 70%;
-        margin: 1vh 0;
-        padding: 1vh 2%;
-        border: 1px solid rgb(44, 44, 44);
-        opacity: .7;
-        position: relative;
+    &__form {
+        .message__input {
+            width: 70%;
+            margin: 1vh 0;
+            padding: 1vh 2%;
+            border: 1px solid rgb(44, 44, 44);
+            opacity: .7;
+            position: relative;
 
-        &::placeholder {
-            font-size: .7rem;
+            &::placeholder {
+                font-size: .7rem;
+            }
+
+            &:focus {
+                border-left: 6px solid rgb(44, 44, 44);
+                transition: .3s linear;
+            }
         }
 
-        &:focus {
-            border-left: 6px solid rgb(44, 44, 44);
-            transition: .3s linear;
+        .message__button {
+            position: relative;
+            margin: 2vh 0 5vh 40%;
+            width: 30%;
+            height: 6vh;
+            line-height: 6vh;
+            font-family: var(--tangerine);
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: rgba(44, 44, 44, .8);
+            background-color: rgb(238, 238, 135);
+            border: 1px solid rgba(44, 44, 44, 0.6);
+            cursor: pointer;
+            overflow: hidden;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: -5%;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: rgba(44, 44, 44, .6);
+                transition: .5s linear;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -5%;
+                width: 1px;
+                height: 100%;
+                background-color: rgba(44, 44, 44, .6);
+                transition: .5s linear;
+            }
+
+            &:hover:before {
+                top: 100%;
+            }
+
+            &:hover:after {
+                left: 100%;
+            }
         }
     }
 
-    &__button {
-        position: relative;
-        margin: 2vh 0 5vh 40%;
-        width: 30%;
-        height: 6vh;
-        line-height: 6vh;
-        font-family: var(--tangerine);
-        font-size: 1.3rem;
-        font-weight: bold;
-        color: rgba(44, 44, 44, .8);
-        background-color: rgb(238, 238, 135);
-        border: 1px solid rgba(44, 44, 44, 0.6);
-        cursor: pointer;
-        overflow: hidden;
-
-        &:before {
-            content: '';
-            position: absolute;
-            top: -5%;
-            left: 0;
-            width: 100%;
-            height: 1px;
-            background-color: rgba(44, 44, 44, .6);
-            transition: .5s linear;
-        }
-
-        &:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -5%;
-            width: 1px;
-            height: 100%;
-            background-color: rgba(44, 44, 44, .6);
-            transition: .5s linear;
-        }
-
-        &:hover:before {
-            top: 100%;
-        }
-
-        &:hover:after {
-            left: 100%;
-        }
-    }
 }
 
 @media (min-width: 768px) {
@@ -102,19 +105,21 @@
             border-top: 3px solid rgba(44, 44, 44, .7);
         }
 
-        &__input {
-            padding: 2vh 2%;
+        &__form {
+            .message__input {
+                padding: 2vh 2%;
 
-            &::placeholder {
-                font-size: 1.1rem;
+                &::placeholder {
+                    font-size: 1.1rem;
+                }
             }
-        }
 
-        &__button {
-            margin: 2vh 0 5vh 40%;
-            width: 20%;
-            font-size: 2.5rem;
-            border: 2px solid rgba(44, 44, 44, 0.6);
+            .message__button {
+                margin: 2vh 0 5vh 40%;
+                width: 20%;
+                font-size: 2.5rem;
+                border: 2px solid rgba(44, 44, 44, 0.6);
+            }
         }
     }
 }
@@ -129,16 +134,18 @@
             padding-top: 10vh;
         }
 
-        &__input {
-            width: 60%;
-        }
+        &__form {
+            .message__input {
+                width: 60%;
+            }
 
-        &__button {
-            margin: 2vh 0 10vh 40%;
-            width: 15%;
-            height: 10vh;
-            line-height: 10vh;
-            font-size: 1.3rem;
+            .message__button {
+                margin: 2vh 0 10vh 40%;
+                width: 15%;
+                height: 10vh;
+                line-height: 10vh;
+                font-size: 1.3rem;
+            }
         }
     }
 }
@@ -147,17 +154,18 @@
     // Message
 
     .message {
+        &__form {
+            .message__input {
+                border: 2px solid rgb(44, 44, 44);
 
-        &__input {
-            border: 2px solid rgb(44, 44, 44);
-
-            &:focus {
-                border-left: 7px solid rgb(44, 44, 44);
+                &:focus {
+                    border-left: 7px solid rgb(44, 44, 44);
+                }
             }
-        }
 
-        &__button {
-            font-size: 2.5rem;
+            .message__button {
+                font-size: 2.5rem;
+            }
         }
     }
 }

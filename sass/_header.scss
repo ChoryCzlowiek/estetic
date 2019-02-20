@@ -122,17 +122,17 @@ html {
 
             &--text {
                 font-size: 3rem;
-                font-weight: 500;
                 font-family: var(--tangerine);
             }
 
             &--triangle {
                 font-size: 1.2rem;
                 display: none;
+            }
 
-                &.active-triangle {
-                    display: inline-block;
-                }
+
+            &--active {
+                display: inline-block;
             }
         }
     }

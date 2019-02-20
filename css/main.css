@@ -144,7 +144,6 @@ html {
 
 .navigation__opener .navigation__icon--text {
   font-size: 3rem;
-  font-weight: 500;
   font-family: var(--tangerine);
 }
 
@@ -153,7 +152,7 @@ html {
   display: none;
 }
 
-.navigation__opener .navigation__icon--triangle.active-triangle {
+.navigation__opener .navigation__icon--active {
   display: inline-block;
 }
 
@@ -451,7 +450,6 @@ html {
   text-align: center;
   font-size: 2.5rem;
   font-family: var(--tangerine);
-  font-weight: bold;
   color: rgba(44, 44, 44, 0.7);
 }
 
@@ -617,10 +615,14 @@ html {
   color: rgba(255, 255, 255, 0.9);
 }
 
-.projects .projects__heading .heading__text--title {
+.projects .projects__heading .heading__title {
+  position: absolute;
   top: 45%;
+  left: 0;
+  width: 100%;
   font-size: 3rem;
   font-family: var(--tangerine);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .projects__rooms {
@@ -693,19 +695,22 @@ html {
   text-align: center;
 }
 
+.item__text-container .item__title {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 80%;
+  font-family: var(--tangerine);
+  font-size: 1.3rem;
+  color: rgba(44, 44, 44, 0.7);
+}
+
 .item__text-container .item__text {
   position: absolute;
   top: 55%;
   left: 10%;
   width: 80%;
   font-size: .4rem;
-}
-
-.item__text-container .item__text--title {
-  top: 15%;
-  font-family: var(--tangerine);
-  font-size: 1.3rem;
-  color: rgba(44, 44, 44, 0.7);
 }
 
 .item__text-container .item__line {
@@ -726,10 +731,8 @@ html {
   }
   .projects .projects__heading .heading__text {
     font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.9);
   }
-  .projects .projects__heading .heading__text--title {
-    top: 45%;
+  .projects .projects__heading .heading__title {
     font-size: 4.5rem;
   }
   .projects__rooms {
@@ -739,11 +742,11 @@ html {
   .item__border {
     border: 2px solid rgba(44, 44, 44, 0.7);
   }
+  .item__text-container .item__title {
+    font-size: 2.5rem;
+  }
   .item__text-container .item__text {
     font-size: .8rem;
-  }
-  .item__text-container .item__text--title {
-    font-size: 2.5rem;
   }
 }
 
@@ -765,7 +768,7 @@ html {
     left: 30%;
     width: 40%;
   }
-  .item__text-container .item__text--title {
+  .item__text-container .item__title {
     top: 15%;
   }
   .item__text-container .item__line {
@@ -777,20 +780,20 @@ html {
   .projects .projects__heading .heading__text {
     font-size: 1.3rem;
   }
-  .projects .projects__heading .heading__text--title {
+  .projects .projects__heading .heading__title {
     font-size: 5rem;
   }
   .item {
     -ms-flex-preferred-size: 20vh;
         flex-basis: 20vh;
   }
+  .item__text-container .item__title {
+    font-size: 2.5rem;
+  }
   .item__text-container .item__text {
     left: 10%;
     width: 80%;
     font-size: .9rem;
-  }
-  .item__text-container .item__text--title {
-    font-size: 2.5rem;
   }
 }
 
@@ -953,7 +956,6 @@ html {
   top: 50%;
   left: 20%;
   width: 65%;
-  text-align: center;
   font-size: .8rem;
   -webkit-animation: hidingOpinion 12s linear infinite both;
           animation: hidingOpinion 12s linear infinite both;
@@ -965,6 +967,7 @@ html {
   left: 60%;
   font-size: 1.6rem;
   font-family: var(--tangerine);
+  font-weight: bold;
   color: rgba(44, 44, 44, 0.7);
   -webkit-animation: hidingOpinion 12s linear infinite both;
           animation: hidingOpinion 12s linear infinite both;
@@ -1196,7 +1199,7 @@ html {
   border-top: 2px solid rgba(44, 44, 44, 0.7);
 }
 
-.message__input {
+.message__form .message__input {
   width: 70%;
   margin: 1vh 0;
   padding: 1vh 2%;
@@ -1205,29 +1208,29 @@ html {
   position: relative;
 }
 
-.message__input::-webkit-input-placeholder {
+.message__form .message__input::-webkit-input-placeholder {
   font-size: .7rem;
 }
 
-.message__input:-ms-input-placeholder {
+.message__form .message__input:-ms-input-placeholder {
   font-size: .7rem;
 }
 
-.message__input::-ms-input-placeholder {
+.message__form .message__input::-ms-input-placeholder {
   font-size: .7rem;
 }
 
-.message__input::placeholder {
+.message__form .message__input::placeholder {
   font-size: .7rem;
 }
 
-.message__input:focus {
+.message__form .message__input:focus {
   border-left: 6px solid #2c2c2c;
   -webkit-transition: .3s linear;
   transition: .3s linear;
 }
 
-.message__button {
+.message__form .message__button {
   position: relative;
   margin: 2vh 0 5vh 40%;
   width: 30%;
@@ -1243,7 +1246,7 @@ html {
   overflow: hidden;
 }
 
-.message__button:before {
+.message__form .message__button:before {
   content: '';
   position: absolute;
   top: -5%;
@@ -1255,7 +1258,7 @@ html {
   transition: .5s linear;
 }
 
-.message__button:after {
+.message__form .message__button:after {
   content: '';
   position: absolute;
   top: 0;
@@ -1267,11 +1270,11 @@ html {
   transition: .5s linear;
 }
 
-.message__button:hover:before {
+.message__form .message__button:hover:before {
   top: 100%;
 }
 
-.message__button:hover:after {
+.message__form .message__button:hover:after {
   left: 100%;
 }
 
@@ -1282,22 +1285,22 @@ html {
   .message__line {
     border-top: 3px solid rgba(44, 44, 44, 0.7);
   }
-  .message__input {
+  .message__form .message__input {
     padding: 2vh 2%;
   }
-  .message__input::-webkit-input-placeholder {
+  .message__form .message__input::-webkit-input-placeholder {
     font-size: 1.1rem;
   }
-  .message__input:-ms-input-placeholder {
+  .message__form .message__input:-ms-input-placeholder {
     font-size: 1.1rem;
   }
-  .message__input::-ms-input-placeholder {
+  .message__form .message__input::-ms-input-placeholder {
     font-size: 1.1rem;
   }
-  .message__input::placeholder {
+  .message__form .message__input::placeholder {
     font-size: 1.1rem;
   }
-  .message__button {
+  .message__form .message__button {
     margin: 2vh 0 5vh 40%;
     width: 20%;
     font-size: 2.5rem;
@@ -1309,10 +1312,10 @@ html {
   .message__title {
     padding-top: 10vh;
   }
-  .message__input {
+  .message__form .message__input {
     width: 60%;
   }
-  .message__button {
+  .message__form .message__button {
     margin: 2vh 0 10vh 40%;
     width: 15%;
     height: 10vh;
@@ -1322,13 +1325,13 @@ html {
 }
 
 @media (min-width: 1024px) {
-  .message__input {
+  .message__form .message__input {
     border: 2px solid #2c2c2c;
   }
-  .message__input:focus {
+  .message__form .message__input:focus {
     border-left: 7px solid #2c2c2c;
   }
-  .message__button {
+  .message__form .message__button {
     font-size: 2.5rem;
   }
 }

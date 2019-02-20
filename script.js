@@ -6,7 +6,7 @@ const menuTriangles = [...document.querySelectorAll('.navigation__icon--triangle
 
 function toogleMenu() {
     menu.classList.toggle('active-menu');
-    menuTriangles.forEach(triangle => triangle.classList.toggle('active-triangle'));
+    menuTriangles.forEach(triangle => triangle.classList.toggle('navigation__icon--active'));
 }
 
 menuOpen.addEventListener('click', toogleMenu);
@@ -22,7 +22,7 @@ const texts = ['“David and team are true professionals, super creative, great 
     '“I would recommend estetic to anyone looking for creative interpretations of space that coulda-shoulda been standard.”',
     '“I appreciate that Susie got most of the work done on time.”'
 ];
-const images = ['url("../images/opinions1.jpg")', 'url("../images/opinions2.jpg")', 'url("../images/opinions3.jpg")'];
+const images = ['url("images/opinions1.jpg")', 'url("images/opinions2.jpg")', 'url("images/opinions3.jpg")'];
 const names = ['Jeff Hardy', 'Steve Black', 'Julia Neville'];
 
 let counter = 1;

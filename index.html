@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Tangerine" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
 </head>
@@ -21,10 +19,10 @@
         <img src="images/slider1.png" alt="" class="header__slider header__slider--first-image">
         <img src="images/slider2.png" alt="" class="header__slider header__slider--second-image">
         <img src="images/slider3.png" alt="" class="header__slider header__slider--third-image">
-        <div class="header__navigation navigation">
+        <nav class="header__navigation navigation">
             <div class="navigation__opener">
-                <h2 class="navigation__icon navigation__icon--text">estetic.</h2>
-                <i class="fas fa-caret-down navigation__icon navigation__icon--triangle active-triangle"></i>
+                <span class="navigation__icon navigation__icon--text">Menu</span>
+                <i class="fas fa-caret-down navigation__icon navigation__icon--triangle navigation__icon--active"></i>
                 <i class="fas fa-caret-up navigation__icon navigation__icon--triangle"></i>
             </div>
             <ul class="navigation__menu menu">
@@ -36,7 +34,7 @@
                 <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
                 <li class="menu__item"><a href="#message" class="menu__link">Message</a></li>
             </ul>
-        </div>
+        </nav>
         <h1 class="header__title">Find Your style</h1>
         <div class="header__border border">
             <div class="border__top"></div>
@@ -46,8 +44,7 @@
 
     <section class="about" id="about">
         <div class="about__text-container">
-            <h1 class="about__title">Who we are</h1>
-            <hr class="about__line">
+            <h2 class="about__title">Who we are</h2>
             <p class="about__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident animi atque
                 magnam maiores ratione voluptatum obcaecati fuga error labore iure voluptas laboriosam beatae
                 accusantium nisi, in facere repudiandae saepe aperiam!</p>
@@ -56,43 +53,43 @@
     </section>
 
     <section class="team" id="team">
-        <p class="team__subtitle">Our team is a group of talented and creative specialists.</p>
+        <h2 class="team__subtitle">Our team is a group of talented and creative specialists.</h2>
         <div class="team__images-container images-container">
             <div class="images-container__box  box">
                 <div class="box__border"> </div>
                 <img src="images/team1.jpg" alt="" class="box__image">
                 <h3 class="box__workers-info">David Blue</h3>
-                <h4 class="box__workers-info box__workers-info--job">- Architect -</h4>
+                <p class="box__workers-info box__workers-info--job">- Architect -</p>
             </div>
             <div class="images-container__box box">
                 <div class="box__border"> </div>
                 <img src="images/team2.jpg" alt="" class="box__image">
                 <h3 class="box__workers-info">Sam Bailey</h3>
-                <h4 class="box__workers-info box__workers-info--job">- Architect -</h4>
+                <p class="box__workers-info box__workers-info--job">- Architect -</p>
             </div>
             <div class="images-container__box box">
                 <div class="box__border"> </div>
                 <img src="images/team3.jpg" alt="" class="box__image">
                 <h3 class="box__workers-info">Ray Segall</h3>
-                <h4 class="box__workers-info box__workers-info--job">- Architect -</h4>
+                <p class="box__workers-info box__workers-info--job">- Architect -</p>
             </div>
             <div class="images-container__box box">
                 <div class="box__border"> </div>
                 <img src="images/team4.jpg" alt="" class="box__image">
                 <h3 class="box__workers-info">Kate Simon</h3>
-                <h4 class="box__workers-info box__workers-info--job">- Designer -</h4>
+                <p class="box__workers-info box__workers-info--job">- Designer -</p>
             </div>
             <div class="images-container__box box">
                 <div class="box__border"> </div>
                 <img src="images/team5.jpg" alt="" class="box__image">
                 <h3 class="box__workers-info">Jack Lee</h3>
-                <h4 class="box__workers-info box__workers-info--job">- Designer -</h4>
+                <p class="box__workers-info box__workers-info--job">- Designer -</p>
             </div>
             <div class="images-container__box box">
                 <div class="box__border"> </div>
                 <img src="images/team6.jpg" alt="" class="box__image">
                 <h3 class="box__workers-info">Maria Jenkins</h3>
-                <h4 class="box__workers-info box__workers-info--job">- Designer -</h4>
+                <p class="box__workers-info box__workers-info--job">- Designer -</p>
             </div>
         </div>
     </section>
@@ -101,7 +98,7 @@
         <div class="projects__heading heading">
             <div class="heading__border"></div>
             <h2 class="heading__text">- Check it out! -</h2>
-            <h1 class="heading__text heading__text--title">Projects</h1>
+            <h1 class="heading__title">Projects</h1>
         </div>
 
         <div class="projects__rooms rooms">
@@ -109,7 +106,7 @@
                 <div class="item__border"></div>
                 <div class="item__image item__image--bedroom"></div>
                 <div class="item__text-container">
-                    <h2 class="item__text item__text--title">Bedroom</h2>
+                    <h2 class="item__title">Bedroom</h2>
                     <hr class="item__line">
                     <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing
                         elit.</p>
@@ -119,7 +116,7 @@
                 <div class="item__border"></div>
                 <div class="item__image item__image--kitchen"></div>
                 <div class="item__text-container">
-                    <h2 class="item__text item__text--title">Kitchen</h2>
+                    <h2 class="item__title">Kitchen</h2>
                     <hr class="item__line">
                     <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing
                         elit.</p>
@@ -129,7 +126,7 @@
                 <div class="item__border"></div>
                 <div class="item__image item__image--living"></div>
                 <div class="item__text-container">
-                    <h2 class="item__text item__text--title">Living Room</h2>
+                    <h2 class="item__title">Living Room</h2>
                     <hr class="item__line">
                     <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing
                         elit.</p>
@@ -139,7 +136,7 @@
                 <div class="item__border"></div>
                 <div class="item__image item__image--bathroom"></div>
                 <div class="item__text-container">
-                    <h2 class="item__text item__text--title">Bathroom</h2>
+                    <h2 class="item__title">Bathroom</h2>
                     <hr class="item__line">
                     <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing
                         elit.</p>
@@ -181,8 +178,7 @@
                     <i class="fas fa-map-marker-alt info__icon"></i>
                 </div>
                 <div class="info__text-container">
-                    <p class="info__text">Krakowska 34 Street</p>
-                    <p class="info__text">01-124 Warsaw</p>
+                    <p class="info__text">Krakowska 34 Street <br> 01-124 Warsaw</p>
                 </div>
             </div>
         </div>
@@ -193,9 +189,10 @@
             <h1 class="opinions__title">What our Clients say about us...</h1>
             <hr class="opinions__line">
             <div class="opinions__image"></div>
-            <p class="opinions__text">“David and team are true professionals, super creative, great people and great to
-                work with.”</p>
-            <h3 class="opinions__name">Jeff Hardy</h3>
+            <p class="opinions__text">David and team are true professionals, super creative, great people and great
+                to
+                work with.</p>
+            <p class="opinions__name">Jeff Hardy</p>
             <div class="opinions__circles-container">
                 <div class="opinions__circle opinions__circle--active"></div>
                 <div class="opinions__circle"></div>
@@ -207,10 +204,12 @@
     <section class="message" id="message">
         <h1 class="message__title">Write to us</h1>
         <hr class="message__line">
-        <input type="text" placeholder="Your name and surname..." class="message__input">
-        <input type="text" placeholder="Your email address..." class="message__input">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your message..." class="message__input"></textarea>
-        <button type="submit" class="message__button">Send it!</button>
+        <form action="" class="message__form">
+            <input type="text" placeholder="Your name and surname..." class="message__input">
+            <input type="text" placeholder="Your email address..." class="message__input">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your message..." class="message__input"></textarea>
+            <button type="submit" class="message__button">Send it!</button>
+        </form>
     </section>
 
     <script src="script.js"></script>

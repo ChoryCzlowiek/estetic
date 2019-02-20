@@ -49,7 +49,6 @@
             top: 50%;
             left: 20%;
             width: 65%;
-            text-align: center;
             font-size: .8rem;
             animation: hidingOpinion 12s linear infinite both;
         }
@@ -60,6 +59,7 @@
             left: 60%;
             font-size: 1.6rem;
             font-family: var(--tangerine);
+            font-weight: bold;
             color: rgba(44, 44, 44, .7);
             animation: hidingOpinion 12s linear infinite both;
         }

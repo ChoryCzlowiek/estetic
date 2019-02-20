@@ -28,12 +28,16 @@
             width: 100%;
             font-size: .7rem;
             color: rgba(255, 255, 255, 0.9);
+        }
 
-            &--title {
-                top: 45%;
-                font-size: 3rem;
-                font-family: var(--tangerine);
-            }
+        .heading__title {
+            position: absolute;
+            top: 45%;
+            left: 0;
+            width: 100%;
+            font-size: 3rem;
+            font-family: var(--tangerine);
+            color: rgba(255, 255, 255, 0.9);
         }
     }
 }
@@ -99,19 +103,22 @@
         position: relative;
         text-align: center;
 
+        .item__title {
+            position: absolute;
+            top: 15%;
+            left: 10%;
+            width: 80%;
+            font-family: var(--tangerine);
+            font-size: 1.3rem;
+            color: rgba(44, 44, 44, .7);
+        }
+
         .item__text {
             position: absolute;
             top: 55%;
             left: 10%;
             width: 80%;
             font-size: .4rem;
-
-            &--title {
-                top: 15%;
-                font-family: var(--tangerine);
-                font-size: 1.3rem;
-                color: rgba(44, 44, 44, .7);
-            }
         }
 
         .item__line {
@@ -139,12 +146,10 @@
 
             .heading__text {
                 font-size: 1.1rem;
-                color: rgba(255, 255, 255, 0.9);
+            }
 
-                &--title {
-                    top: 45%;
-                    font-size: 4.5rem;
-                }
+            .heading__title {
+                font-size: 4.5rem;
             }
         }
     }
@@ -168,12 +173,12 @@
 
         &__text-container {
 
+            .item__title {
+                font-size: 2.5rem;
+            }
+
             .item__text {
                 font-size: .8rem;
-
-                &--title {
-                    font-size: 2.5rem;
-                }
             }
         }
     }
@@ -211,10 +216,10 @@
                 top: 55%;
                 left: 30%;
                 width: 40%;
+            }
 
-                &--title {
-                    top: 15%;
-                }
+            .item__title {
+                top: 15%;
             }
 
             .item__line {
@@ -233,10 +238,10 @@
 
             .heading__text {
                 font-size: 1.3rem;
+            }
 
-                &--title {
-                    font-size: 5rem;
-                }
+            .heading__title {
+                font-size: 5rem;
             }
         }
     }
@@ -248,14 +253,14 @@
 
         &__text-container {
 
+            .item__title {
+                font-size: 2.5rem;
+            }
+
             .item__text {
                 left: 10%;
                 width: 80%;
                 font-size: .9rem;
-
-                &--title {
-                    font-size: 2.5rem;
-                }
             }
         }
     }
