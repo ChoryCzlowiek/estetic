@@ -53,15 +53,6 @@
             box-shadow: 0 0 10px 2px rgb(97, 95, 95);
         }
 
-        .box__text {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            width: 100%;
-            color: rgb(44, 44, 44);
-        }
-
         .box__workers-info {
             position: absolute;
             top: 65%;
@@ -97,6 +88,7 @@
 
 
         .images-container__box {
+            flex-basis: 40%;
 
             .box__border {
                 border: 5px solid rgba(255, 255, 255, 0.6);
@@ -107,10 +99,10 @@
             }
 
             .box__workers-info {
-                font-size: 2.8rem;
+                font-size: 1.6rem;
 
                 &--job {
-                    font-size: 1.3rem;
+                    font-size: .8rem;
                 }
             }
         }
@@ -130,28 +122,10 @@
     // Image Box
 
     .images-container {
-        flex-direction: row;
-        flex-wrap: wrap;
 
         .images-container__box {
-            flex-basis: 30%;
+            flex-basis: 26%;
             margin: 3vh 0;
-
-            &:nth-of-type(5) {
-                display: block;
-            }
-
-            .box__text {
-                font-size: 1.2rem;
-            }
-
-            .box__workers-info {
-                font-size: .9rem;
-
-                &--job {
-                    font-size: .5rem;
-                }
-            }
         }
     }
 }
@@ -160,15 +134,13 @@
     // Image Box
 
     .images-container {
+        margin: 5vh 25%;
+        width: 50%;
 
         .images-container__box {
 
             .box__image {
                 box-shadow: 0 0 15px 4px rgb(0, 0, 0);
-            }
-
-            .box__text {
-                font-size: 2rem;
             }
 
             .box__workers-info {
@@ -188,15 +160,12 @@
     .images-container {
 
         .images-container__box {
-            .box__text {
-                font-size: 3rem;
-            }
 
             .box__workers-info {
-                font-size: 1.8rem;
+                font-size: 1.4rem;
 
                 &--job {
-                    font-size: 1rem;
+                    font-size: .9rem;
                 }
             }
         }

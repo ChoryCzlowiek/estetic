@@ -5,6 +5,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --tangerine: 'Tangerine';
 }
@@ -174,6 +178,10 @@
             color: rgb(88, 88, 88);
             font-size: .8rem;
             text-decoration: none;
+
+            &:hover {
+                font-weight: bold;
+            }
         }
     }
 }

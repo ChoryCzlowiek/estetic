@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <img src="images/slider1.png" alt="" class="header__slider header__slider--first-image">
         <img src="images/slider2.png" alt="" class="header__slider header__slider--second-image">
         <img src="images/slider3.png" alt="" class="header__slider header__slider--third-image">
@@ -28,13 +28,13 @@
                 <i class="fas fa-caret-up navigation__icon navigation__icon--triangle"></i>
             </div>
             <ul class="navigation__menu menu">
-                <li class="menu__item"><a href="" class="menu__link">About</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Designers</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Rooms</a></li>
-                <li class="menu__item menu__item--title"><a href="" class="menu__link menu__link--size">estetic.</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Opinions</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Contact</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Message</a></li>
+                <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+                <li class="menu__item"><a href="#team" class="menu__link">Team</a></li>
+                <li class="menu__item"><a href="#projects" class="menu__link">Projects</a></li>
+                <li class="menu__item menu__item--title"><a href="#header" class="menu__link menu__link--size">estetic.</a></li>
+                <li class="menu__item"><a href="#opinions" class="menu__link">Opinions</a></li>
+                <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+                <li class="menu__item"><a href="#message" class="menu__link">Message</a></li>
             </ul>
         </div>
         <h1 class="header__title">Find Your style</h1>
@@ -44,7 +44,7 @@
         </div>
     </header>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="about__text-container">
             <h1 class="about__title">Who we are</h1>
             <hr class="about__line">
@@ -55,7 +55,7 @@
         <div class="about__image"></div>
     </section>
 
-    <section class="team">
+    <section class="team" id="team">
         <p class="team__subtitle">Our team is a group of talented and creative specialists.</p>
         <div class="team__images-container images-container">
             <div class="images-container__box  box">
@@ -97,7 +97,7 @@
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="projects__heading heading">
             <div class="heading__border"></div>
             <h2 class="heading__text">- Check it out! -</h2>
@@ -148,7 +148,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact__container">
             <div class="contact__info info">
                 <div class="info__icon-container">
@@ -188,13 +188,13 @@
         </div>
     </section>
 
-    <section class="opinions">
+    <section class="opinions" id="opinions">
         <div class="opinions__container">
             <h1 class="opinions__title">What our Clients say about us...</h1>
             <hr class="opinions__line">
             <div class="opinions__image"></div>
-            <p class="opinions__text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsa consectetur
-                dolorum dolore sint. Obcaecati minus."</p>
+            <p class="opinions__text">“David and team are true professionals, super creative, great people and great to
+                work with.”</p>
             <h3 class="opinions__name">Jeff Hardy</h3>
             <div class="opinions__circles-container">
                 <div class="opinions__circle opinions__circle--active"></div>
@@ -204,7 +204,7 @@
         </div>
     </section>
 
-    <section class="message">
+    <section class="message" id="message">
         <h1 class="message__title">Write to us</h1>
         <hr class="message__line">
         <input type="text" placeholder="Your name and surname..." class="message__input">
