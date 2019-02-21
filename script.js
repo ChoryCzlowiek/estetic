@@ -11,7 +11,7 @@ function toogleMenu() {
 
 menuOpen.addEventListener('click', toogleMenu);
 
-// Change Opinions
+// Change Circle
 
 const opnCircles = [...document.querySelectorAll('.opinions__circle')];
 
@@ -22,9 +22,38 @@ function changeCircle() {
     opnCircles[activeOpnCircle].classList.remove('opinions__circle--active');
     opnCircles[counter].classList.add('opinions__circle--active');
     counter++
-    if (counter > 2) {
+    if (counter == opnCircles.length) {
         counter = 0;
     }
 }
 
 setInterval(changeCircle, 4000);
+
+// Message Info
+
+const messageBtn = document.querySelector('.message__button');
+const messageName = document.getElementById('name');
+const messageEmail = document.getElementById('email');
+const messageText = document.getElementById('text');
+
+function showMessageInfo() {
+    if (messageName.value == '' && messageEmail.value != '' && messageText.value != '') {
+        alert('Please write Your name and surname!');
+    } else if (messageName.value != '' && messageEmail.value == '' && messageText.value != '') {
+        alert('Please write Your email!');
+    } else if (messageName.value != '' && messageEmail.value != '' && messageText.value == '') {
+        alert('Please write Your message!');
+    } else if (messageName.value == '' && messageEmail.value == '' && messageText.value != '') {
+        alert('Please write Your name, surname and email!');
+    } else if (messageName.value != '' && messageEmail.value == '' && messageText.value == '') {
+        alert('Please write Your email and message!');
+    } else if (messageName.value == '' && messageEmail.value != '' && messageText.value == '') {
+        alert('Please write Your name, surname and message!');
+    } else if (messageName.value == '' && messageEmail.value == '' && messageText.value == '') {
+        alert('Please write Your name, surname, email and message!');
+    } else {
+        alert('Your message has been sent!')
+    }
+}
+
+messageBtn.addEventListener('click', showMessageInfo);
