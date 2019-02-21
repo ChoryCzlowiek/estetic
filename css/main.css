@@ -927,8 +927,20 @@ html {
           filter: grayscale(50%);
   -webkit-transition: 1s;
   transition: 1s;
-  -webkit-animation: hidingOpinion 12s linear infinite both;
-          animation: hidingOpinion 12s linear infinite both;
+  -webkit-animation: changeOpinion 12s linear infinite both;
+          animation: changeOpinion 12s linear infinite both;
+}
+
+.opinions__container .opinions__image--second {
+  background-image: url("../images/opinions2.jpg");
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.opinions__container .opinions__image--third {
+  background-image: url("../images/opinions3.jpg");
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
 }
 
 .opinions__container .opinions__text {
@@ -938,8 +950,18 @@ html {
   width: 65%;
   font-size: .8rem;
   text-align: center;
-  -webkit-animation: hidingOpinion 12s linear infinite both;
-          animation: hidingOpinion 12s linear infinite both;
+  -webkit-animation: changeOpinion 12s linear infinite both;
+          animation: changeOpinion 12s linear infinite both;
+}
+
+.opinions__container .opinions__text--second {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.opinions__container .opinions__text--third {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
 }
 
 .opinions__container .opinions__name {
@@ -950,8 +972,18 @@ html {
   font-family: var(--tangerine);
   font-weight: bold;
   color: rgba(44, 44, 44, 0.7);
-  -webkit-animation: hidingOpinion 12s linear infinite both;
-          animation: hidingOpinion 12s linear infinite both;
+  -webkit-animation: changeOpinion 12s linear infinite both;
+          animation: changeOpinion 12s linear infinite both;
+}
+
+.opinions__container .opinions__name--second {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.opinions__container .opinions__name--third {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
 }
 
 .opinions__container .opinions__circles-container {
@@ -983,11 +1015,11 @@ html {
   background-color: #dddd9c;
 }
 
-@-webkit-keyframes hidingOpinion {
+@-webkit-keyframes changeOpinion {
   0% {
     opacity: 0;
   }
-  2% {
+  4% {
     opacity: 1;
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -997,44 +1029,19 @@ html {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  31%,
-  35% {
+  33% {
     opacity: 0;
-  }
-  37% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  60% {
-    opacity: 1;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  62%,
-  70% {
-    opacity: 0;
-  }
-  72% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  97% {
-    opacity: 1;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   100% {
     opacity: 0;
   }
 }
 
-@keyframes hidingOpinion {
+@keyframes changeOpinion {
   0% {
     opacity: 0;
   }
-  2% {
+  4% {
     opacity: 1;
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -1044,33 +1051,8 @@ html {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  31%,
-  35% {
+  33% {
     opacity: 0;
-  }
-  37% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  60% {
-    opacity: 1;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  62%,
-  70% {
-    opacity: 0;
-  }
-  72% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  97% {
-    opacity: 1;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   100% {
     opacity: 0;

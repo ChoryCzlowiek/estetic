@@ -42,7 +42,17 @@
             border-radius: 50%;
             filter: grayscale(50%);
             transition: 1s;
-            animation: hidingOpinion 12s linear infinite both;
+            animation: changeOpinion 12s linear infinite both;
+
+            &--second {
+                background-image: url('../images/opinions2.jpg');
+                animation-delay: 4s;
+            }
+
+            &--third {
+                background-image: url('../images/opinions3.jpg');
+                animation-delay: 8s;
+            }
         }
 
         .opinions__text {
@@ -52,7 +62,15 @@
             width: 65%;
             font-size: .8rem;
             text-align: center;
-            animation: hidingOpinion 12s linear infinite both;
+            animation: changeOpinion 12s linear infinite both;
+
+            &--second {
+                animation-delay: 4s;
+            }
+
+            &--third {
+                animation-delay: 8s;
+            }
         }
 
         .opinions__name {
@@ -63,7 +81,15 @@
             font-family: var(--tangerine);
             font-weight: bold;
             color: rgba(44, 44, 44, .7);
-            animation: hidingOpinion 12s linear infinite both;
+            animation: changeOpinion 12s linear infinite both;
+
+            &--second {
+                animation-delay: 4s;
+            }
+
+            &--third {
+                animation-delay: 8s;
+            }
         }
 
         .opinions__circles-container {
@@ -90,13 +116,13 @@
         }
     }
 
-    @keyframes hidingOpinion {
+    @keyframes changeOpinion {
         0% {
             opacity: 0;
 
         }
 
-        2% {
+        4% {
             opacity: 1;
             transform: scale(1);
         }
@@ -106,34 +132,8 @@
             transform: scale(1.1);
         }
 
-        31%,
-        35% {
+        33% {
             opacity: 0;
-        }
-
-        37% {
-            opacity: 1;
-            transform: scale(1);
-        }
-
-        60% {
-            opacity: 1;
-            transform: scale(1.1);
-        }
-
-        62%,
-        70% {
-            opacity: 0;
-        }
-
-        72% {
-            opacity: 1;
-            transform: scale(1);
-        }
-
-        97% {
-            opacity: 1;
-            transform: scale(1.1);
         }
 
         100% {
