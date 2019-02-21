@@ -937,6 +937,7 @@ html {
   left: 20%;
   width: 65%;
   font-size: .8rem;
+  text-align: center;
   -webkit-animation: hidingOpinion 12s linear infinite both;
           animation: hidingOpinion 12s linear infinite both;
 }
