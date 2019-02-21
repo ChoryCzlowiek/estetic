@@ -632,8 +632,7 @@ html {
 
 .item {
   position: relative;
-  -ms-flex-preferred-size: 15vh;
-      flex-basis: 15vh;
+  min-height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

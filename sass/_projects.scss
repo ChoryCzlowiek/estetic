@@ -49,7 +49,7 @@
 
 .item {
     position: relative;
-    flex-basis: 15vh;
+    min-height: 15vh;
     display: flex;
 
     &--reverse {
