@@ -1,9 +1,10 @@
 // Team
 
 .team {
+    margin: 3rem 0;
 
     &__subtitle {
-        margin: 5vh 10%;
+        margin: 2rem 2rem;
         text-align: center;
         font-size: 2.5rem;
         font-family: var(--tangerine);
@@ -14,8 +15,7 @@
 // Image Box
 
 .images-container {
-    margin: 5vh 15%;
-    width: 70%;
+    margin: 2rem 3rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -24,7 +24,7 @@
     .images-container__box {
         position: relative;
         flex-basis: 45%;
-        margin: 3vh 0;
+        margin: 1rem 0;
         text-align: center;
 
         &:before {
@@ -83,7 +83,7 @@
     // Image Box
 
     .images-container {
-        margin: 5vh 15%;
+        margin: 2rem 7rem;
 
 
         .images-container__box {
@@ -114,7 +114,7 @@
     .team {
 
         &__subtitle {
-            margin: 5vh 20%;
+            margin: 3rem 7rem;
         }
     }
 
@@ -124,7 +124,15 @@
 
         .images-container__box {
             flex-basis: 26%;
-            margin: 3vh 0;
+            margin: 1rem 0;
+
+            .box__workers-info {
+                font-size: .9rem;
+
+                &--job {
+                    font-size: .7rem;
+                }
+            }
         }
     }
 }
@@ -133,21 +141,12 @@
     // Image Box
 
     .images-container {
-        margin: 5vh 25%;
-        width: 50%;
+        margin: 3rem 15rem;
 
         .images-container__box {
 
             .box__image {
                 box-shadow: 0 0 15px 4px rgb(0, 0, 0);
-            }
-
-            .box__workers-info {
-                font-size: .9rem;
-
-                &--job {
-                    font-size: .7rem;
-                }
             }
         }
     }

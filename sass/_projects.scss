@@ -4,8 +4,7 @@
 
     .projects__heading {
         position: relative;
-        height: 20vh;
-        width: 100%;
+        min-height: 20vh;
         background-image: url('../images/projects.jpg');
         background-position: center;
         background-size: cover;
@@ -22,19 +21,12 @@
         }
 
         .heading__text {
-            position: absolute;
-            top: 35%;
-            left: 0;
-            width: 100%;
+            padding: 2.5rem 0 0;
             font-size: .7rem;
             color: rgba(255, 255, 255, 0.9);
         }
 
         .heading__title {
-            position: absolute;
-            top: 45%;
-            left: 0;
-            width: 100%;
             font-size: 3rem;
             font-family: var(--tangerine);
             color: rgba(255, 255, 255, 0.9);
@@ -47,8 +39,7 @@
 .projects {
 
     &__rooms {
-        margin: 5vh 15%;
-        width: 70%;
+        margin: 3rem 2rem;
         display: flex;
         flex-direction: column;
     }
@@ -104,27 +95,19 @@
         text-align: center;
 
         .item__title {
-            position: absolute;
-            top: 15%;
-            left: 10%;
-            width: 80%;
+            margin: 1rem 0 0;
             font-family: var(--tangerine);
             font-size: 1.3rem;
             color: rgba(44, 44, 44, .7);
         }
 
         .item__text {
-            position: absolute;
-            top: 55%;
-            left: 10%;
-            width: 80%;
+            margin: 0 1rem;
             font-size: .4rem;
         }
 
         .item__line {
-            position: absolute;
-            top: 50%;
-            left: 30%;
+            margin: .5rem auto;
             width: 40%;
             border: none;
             border-top: 1px solid rgb(126, 126, 126);
@@ -159,8 +142,7 @@
     .projects {
 
         &__rooms {
-            margin: 5vh 10%;
-            width: 80%;
+            margin: 3rem 5rem;
         }
     }
 
@@ -178,6 +160,7 @@
             }
 
             .item__text {
+                margin: 0 2rem;
                 font-size: .8rem;
             }
         }
@@ -190,7 +173,7 @@
     .projects {
 
         .projects__heading {
-            height: 30vh;
+            min-height: 40vh;
             background-position: 50% 40%;
         }
     }
@@ -200,30 +183,24 @@
     .projects {
 
         &__rooms {
-            margin: 10vh 15%;
-            width: 70%;
+            margin: 3rem 5rem;
         }
     }
 
     // Projects Rooms Item
 
     .item {
-        flex-basis: 20vh;
+        flex-basis: 30vh;
 
         &__text-container {
 
             .item__text {
-                top: 55%;
-                left: 30%;
-                width: 40%;
+                font-size: .5rem;
+                margin: 0 3rem;
             }
 
             .item__title {
-                top: 15%;
-            }
-
-            .item__line {
-                top: 45%;
+                font-size: 2rem;
             }
         }
     }
@@ -246,6 +223,15 @@
         }
     }
 
+    //  Projects Rooms
+
+    .projects {
+
+        &__rooms {
+            margin: 7rem 7rem;
+        }
+    }
+
     // Projects Rooms Item
 
     .item {
@@ -258,8 +244,6 @@
             }
 
             .item__text {
-                left: 10%;
-                width: 80%;
                 font-size: .9rem;
             }
         }

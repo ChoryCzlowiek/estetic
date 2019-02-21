@@ -356,8 +356,8 @@ html {
 }
 
 .about {
-  margin: 0 0 10vh;
-  height: 60vh;
+  margin: 0 0 3rem;
+  min-height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,21 +371,21 @@ html {
 }
 
 .about__text-container .about__title {
-  margin: 15% 0 3%;
+  margin: 3rem 0 .5rem;
   font-family: var(--tangerine);
   font-size: 3rem;
   color: rgba(44, 44, 44, 0.7);
 }
 
 .about__text-container .about__line {
-  margin: 0 auto 15%;
+  margin: 0 auto 2rem;
   width: 50%;
   border: none;
   border-top: 2px solid rgba(44, 44, 44, 0.7);
 }
 
 .about__text-container .about__text {
-  margin: 0 5%;
+  margin: 0 1rem;
   font-size: .8rem;
 }
 
@@ -426,13 +426,13 @@ html {
 
 @media (orientation: landscape) and (min-height: 350px) {
   .about {
-    height: 100vh;
+    min-height: 100vh;
   }
 }
 
 @media (min-width: 1024px) {
   .about {
-    height: 80vh;
+    min-height: 80vh;
   }
   .about__text-container .about__title {
     font-size: 5rem;
@@ -445,8 +445,12 @@ html {
   }
 }
 
+.team {
+  margin: 3rem 0;
+}
+
 .team__subtitle {
-  margin: 5vh 10%;
+  margin: 2rem 2rem;
   text-align: center;
   font-size: 2.5rem;
   font-family: var(--tangerine);
@@ -454,8 +458,7 @@ html {
 }
 
 .images-container {
-  margin: 5vh 15%;
-  width: 70%;
+  margin: 2rem 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -474,7 +477,7 @@ html {
   position: relative;
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
-  margin: 3vh 0;
+  margin: 1rem 0;
   text-align: center;
 }
 
@@ -527,7 +530,7 @@ html {
     font-size: 5rem;
   }
   .images-container {
-    margin: 5vh 15%;
+    margin: 2rem 7rem;
   }
   .images-container .images-container__box {
     -ms-flex-preferred-size: 40%;
@@ -550,29 +553,28 @@ html {
 
 @media (orientation: landscape) and (min-height: 350px) {
   .team__subtitle {
-    margin: 5vh 20%;
+    margin: 3rem 7rem;
   }
   .images-container .images-container__box {
     -ms-flex-preferred-size: 26%;
         flex-basis: 26%;
-    margin: 3vh 0;
-  }
-}
-
-@media (min-width: 1024px) {
-  .images-container {
-    margin: 5vh 25%;
-    width: 50%;
-  }
-  .images-container .images-container__box .box__image {
-    -webkit-box-shadow: 0 0 15px 4px black;
-            box-shadow: 0 0 15px 4px black;
+    margin: 1rem 0;
   }
   .images-container .images-container__box .box__workers-info {
     font-size: .9rem;
   }
   .images-container .images-container__box .box__workers-info--job {
     font-size: .7rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .images-container {
+    margin: 3rem 15rem;
+  }
+  .images-container .images-container__box .box__image {
+    -webkit-box-shadow: 0 0 15px 4px black;
+            box-shadow: 0 0 15px 4px black;
   }
 }
 
@@ -587,8 +589,7 @@ html {
 
 .projects .projects__heading {
   position: relative;
-  height: 20vh;
-  width: 100%;
+  min-height: 20vh;
   background-image: url("../images/projects.jpg");
   background-position: center;
   background-size: cover;
@@ -607,27 +608,19 @@ html {
 }
 
 .projects .projects__heading .heading__text {
-  position: absolute;
-  top: 35%;
-  left: 0;
-  width: 100%;
+  padding: 2.5rem 0 0;
   font-size: .7rem;
   color: rgba(255, 255, 255, 0.9);
 }
 
 .projects .projects__heading .heading__title {
-  position: absolute;
-  top: 45%;
-  left: 0;
-  width: 100%;
   font-size: 3rem;
   font-family: var(--tangerine);
   color: rgba(255, 255, 255, 0.9);
 }
 
 .projects__rooms {
-  margin: 5vh 15%;
-  width: 70%;
+  margin: 3rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -696,27 +689,19 @@ html {
 }
 
 .item__text-container .item__title {
-  position: absolute;
-  top: 15%;
-  left: 10%;
-  width: 80%;
+  margin: 1rem 0 0;
   font-family: var(--tangerine);
   font-size: 1.3rem;
   color: rgba(44, 44, 44, 0.7);
 }
 
 .item__text-container .item__text {
-  position: absolute;
-  top: 55%;
-  left: 10%;
-  width: 80%;
+  margin: 0 1rem;
   font-size: .4rem;
 }
 
 .item__text-container .item__line {
-  position: absolute;
-  top: 50%;
-  left: 30%;
+  margin: .5rem auto;
   width: 40%;
   border: none;
   border-top: 1px solid #7e7e7e;
@@ -736,8 +721,7 @@ html {
     font-size: 4.5rem;
   }
   .projects__rooms {
-    margin: 5vh 10%;
-    width: 80%;
+    margin: 3rem 5rem;
   }
   .item__border {
     border: 2px solid rgba(44, 44, 44, 0.7);
@@ -746,33 +730,29 @@ html {
     font-size: 2.5rem;
   }
   .item__text-container .item__text {
+    margin: 0 2rem;
     font-size: .8rem;
   }
 }
 
 @media (orientation: landscape) and (min-width: 350px) {
   .projects .projects__heading {
-    height: 30vh;
+    min-height: 40vh;
     background-position: 50% 40%;
   }
   .projects__rooms {
-    margin: 10vh 15%;
-    width: 70%;
+    margin: 3rem 5rem;
   }
   .item {
-    -ms-flex-preferred-size: 20vh;
-        flex-basis: 20vh;
+    -ms-flex-preferred-size: 30vh;
+        flex-basis: 30vh;
   }
   .item__text-container .item__text {
-    top: 55%;
-    left: 30%;
-    width: 40%;
+    font-size: .5rem;
+    margin: 0 3rem;
   }
   .item__text-container .item__title {
-    top: 15%;
-  }
-  .item__text-container .item__line {
-    top: 45%;
+    font-size: 2rem;
   }
 }
 
@@ -783,6 +763,9 @@ html {
   .projects .projects__heading .heading__title {
     font-size: 5rem;
   }
+  .projects__rooms {
+    margin: 7rem 7rem;
+  }
   .item {
     -ms-flex-preferred-size: 20vh;
         flex-basis: 20vh;
@@ -791,15 +774,13 @@ html {
     font-size: 2.5rem;
   }
   .item__text-container .item__text {
-    left: 10%;
-    width: 80%;
     font-size: .9rem;
   }
 }
 
 .contact {
   position: relative;
-  margin: 10vh 0;
+  margin: 3rem 0;
   min-height: 15vh;
   background-color: beige;
 }
