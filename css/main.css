@@ -888,7 +888,8 @@ html {
   position: relative;
   margin: 5rem auto;
   width: 80%;
-  min-height: 40vh;
+  min-height: 250px;
+  height: 40vh;
   border: 3px solid rgba(44, 44, 44, 0.6);
 }
 
@@ -1110,6 +1111,7 @@ html {
 
 @media (orientation: landscape) and (min-height: 350px) {
   .opinions__container {
+    min-height: 200px;
     height: 50vh;
     border: 2px solid rgba(44, 44, 44, 0.6);
   }
