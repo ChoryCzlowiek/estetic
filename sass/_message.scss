@@ -2,7 +2,6 @@
 
 .message {
     position: relative;
-    margin: 10vh 0 0;
     background-image: url('../images/message.png');
     background-position: center;
     background-size: cover;
@@ -11,27 +10,28 @@
 
 
     &__title {
-        padding-top: 5vh;
+        padding-top: 3rem;
         font-family: var(--tangerine);
         font-size: 3rem;
         color: rgba(44, 44, 44, .7);
     }
 
     &__line {
-        margin: 0 0 5vh 30%;
+        margin: 0.5rem auto 2rem;
         width: 40%;
         border: none;
         border-top: 2px solid rgba(44, 44, 44, .7);
     }
 
     &__form {
+        display: flex;
+        flex-direction: column;
+
         .message__input {
-            width: 70%;
-            margin: 1vh 0;
-            padding: 1vh 2%;
+            margin: .5rem 3rem;
+            padding: .5rem .5rem;
             border: 1px solid rgb(44, 44, 44);
             opacity: .7;
-            position: relative;
 
             &::placeholder {
                 font-size: .7rem;
@@ -45,10 +45,8 @@
 
         .message__button {
             position: relative;
-            margin: 2vh 0 5vh 40%;
-            width: 30%;
-            height: 6vh;
-            line-height: 6vh;
+            margin: 1rem 3rem 2rem 12rem;
+            padding: .5rem 0;
             font-family: var(--tangerine);
             font-size: 1.3rem;
             font-weight: bold;
@@ -107,7 +105,8 @@
 
         &__form {
             .message__input {
-                padding: 2vh 2%;
+                margin: .5rem 5rem;
+                padding: 1rem 1rem;
 
                 &::placeholder {
                     font-size: 1.1rem;
@@ -115,8 +114,8 @@
             }
 
             .message__button {
-                margin: 2vh 0 5vh 40%;
-                width: 20%;
+                margin: 1rem 5rem 2rem 30rem;
+                padding: 1rem 0;
                 font-size: 2.5rem;
                 border: 2px solid rgba(44, 44, 44, 0.6);
             }
@@ -131,19 +130,16 @@
 
 
         &__title {
-            padding-top: 10vh;
+            margin-top: 10vh;
         }
 
         &__form {
             .message__input {
-                width: 60%;
+                margin: .5rem 5rem;
             }
 
             .message__button {
-                margin: 2vh 0 10vh 40%;
-                width: 15%;
-                height: 10vh;
-                line-height: 10vh;
+                margin: 1rem 5rem 2rem 28rem;
                 font-size: 1.3rem;
             }
         }
@@ -156,6 +152,7 @@
     .message {
         &__form {
             .message__input {
+                margin: .5rem 10rem;
                 border: 2px solid rgb(44, 44, 44);
 
                 &:focus {
@@ -164,7 +161,24 @@
             }
 
             .message__button {
+                margin: 1rem 10rem 2rem 40rem;
                 font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+@media(min-width: 1440px) {
+    // Message
+
+    .message {
+        &__form {
+            .message__input {
+                margin: .5rem 15rem;
+            }
+
+            .message__button {
+                margin: 1rem 15rem 2rem 65rem;
             }
         }
     }

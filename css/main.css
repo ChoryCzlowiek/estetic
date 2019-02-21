@@ -385,7 +385,7 @@ html {
 }
 
 .about__text-container .about__text {
-  margin: 0 1rem;
+  margin: 2rem 1rem;
   font-size: .8rem;
 }
 
@@ -614,6 +614,7 @@ html {
 }
 
 .projects .projects__heading .heading__title {
+  padding: 0 0 2.5rem;
   font-size: 3rem;
   font-family: var(--tangerine);
   color: rgba(255, 255, 255, 0.9);
@@ -1155,7 +1156,6 @@ html {
 
 .message {
   position: relative;
-  margin: 10vh 0 0;
   background-image: url("../images/message.png");
   background-position: center;
   background-size: cover;
@@ -1165,26 +1165,34 @@ html {
 }
 
 .message__title {
-  padding-top: 5vh;
+  padding-top: 3rem;
   font-family: var(--tangerine);
   font-size: 3rem;
   color: rgba(44, 44, 44, 0.7);
 }
 
 .message__line {
-  margin: 0 0 5vh 30%;
+  margin: 0.5rem auto 2rem;
   width: 40%;
   border: none;
   border-top: 2px solid rgba(44, 44, 44, 0.7);
 }
 
+.message__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .message__form .message__input {
-  width: 70%;
-  margin: 1vh 0;
-  padding: 1vh 2%;
+  margin: .5rem 3rem;
+  padding: .5rem .5rem;
   border: 1px solid #2c2c2c;
   opacity: .7;
-  position: relative;
 }
 
 .message__form .message__input::-webkit-input-placeholder {
@@ -1211,10 +1219,8 @@ html {
 
 .message__form .message__button {
   position: relative;
-  margin: 2vh 0 5vh 40%;
-  width: 30%;
-  height: 6vh;
-  line-height: 6vh;
+  margin: 1rem 3rem 2rem 12rem;
+  padding: .5rem 0;
   font-family: var(--tangerine);
   font-size: 1.3rem;
   font-weight: bold;
@@ -1265,7 +1271,8 @@ html {
     border-top: 3px solid rgba(44, 44, 44, 0.7);
   }
   .message__form .message__input {
-    padding: 2vh 2%;
+    margin: .5rem 5rem;
+    padding: 1rem 1rem;
   }
   .message__form .message__input::-webkit-input-placeholder {
     font-size: 1.1rem;
@@ -1280,8 +1287,8 @@ html {
     font-size: 1.1rem;
   }
   .message__form .message__button {
-    margin: 2vh 0 5vh 40%;
-    width: 20%;
+    margin: 1rem 5rem 2rem 30rem;
+    padding: 1rem 0;
     font-size: 2.5rem;
     border: 2px solid rgba(44, 44, 44, 0.6);
   }
@@ -1289,29 +1296,37 @@ html {
 
 @media (orientation: landscape) and (min-height: 350px) {
   .message__title {
-    padding-top: 10vh;
+    margin-top: 10vh;
   }
   .message__form .message__input {
-    width: 60%;
+    margin: .5rem 5rem;
   }
   .message__form .message__button {
-    margin: 2vh 0 10vh 40%;
-    width: 15%;
-    height: 10vh;
-    line-height: 10vh;
+    margin: 1rem 5rem 2rem 28rem;
     font-size: 1.3rem;
   }
 }
 
 @media (min-width: 1024px) {
   .message__form .message__input {
+    margin: .5rem 10rem;
     border: 2px solid #2c2c2c;
   }
   .message__form .message__input:focus {
     border-left: 7px solid #2c2c2c;
   }
   .message__form .message__button {
+    margin: 1rem 10rem 2rem 40rem;
     font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .message__form .message__input {
+    margin: .5rem 15rem;
+  }
+  .message__form .message__button {
+    margin: 1rem 15rem 2rem 65rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
