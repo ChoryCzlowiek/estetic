@@ -632,7 +632,6 @@ html {
 
 .item {
   position: relative;
-  min-height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -695,7 +694,7 @@ html {
 }
 
 .item__text-container .item__text {
-  margin: 0 1rem;
+  margin: 0 1rem 1rem;
   font-size: .4rem;
 }
 
