@@ -21,7 +21,7 @@ Project is created with:
 
 ## Installation
 
-* CLone or download repository from [repo](https://github.com/ChoryCzlowiek/estetic.git)
+* Clone or download repository from [repo](https://github.com/ChoryCzlowiek/estetic.git)
 * Make sure ```index.html``` exist
 * Open ```index.html``` in your browser
 
